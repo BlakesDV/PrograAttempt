@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "MyCharacterUwU.generated.h"
 
+
+
 UCLASS()
 class MEDIEVALHARVEST_API AMyCharacterUwU : public ACharacter
 {
@@ -14,6 +16,13 @@ class MEDIEVALHARVEST_API AMyCharacterUwU : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AMyCharacterUwU();
+
+	UPROPERTY(VisibleAnywhere, BluePrintReadOnly, Category = "Pruebas")
+		int life;
+
+	UFUNCTION(BluePrintCallable, Category = "Func")
+		void Prueba();
+
 
 protected:
 	// Called when the game starts or when spawned
