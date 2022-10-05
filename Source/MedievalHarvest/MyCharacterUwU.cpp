@@ -3,6 +3,8 @@
 
 #include "MyCharacterUwU.h"
 
+float life;
+
 // Sets default values
 AMyCharacterUwU::AMyCharacterUwU()
 {
@@ -30,5 +32,10 @@ void AMyCharacterUwU::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void AMyCharacterUwU:: Prueba ()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Hi"));
 }
 
