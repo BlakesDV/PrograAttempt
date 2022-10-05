@@ -15,12 +15,6 @@ public:
 	// Sets default values for this character's properties
 	AMyCharacterUwU();
 
-	UPROPERTY(VisibleAnywhere, BluePrintReadOnly, Category = "Pruebas")
-		int life;
-
-	UFUNCTION(BluePrintCallable, Category = "Func")
-		void Prueba();
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
